@@ -1,6 +1,47 @@
 body {
-  background: #587E20;
-  color: white;
+  background: rgb(254,255,215);
+  color: black;
   font-size: 22px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Book-Antiqua', Cambria, Garamond, sans-serif;
+}
+
+* {
+  font-weight: normal;
+}
+
+#container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1 {
+  padding-top: 8em;
+  font-size: 1.75em;
+  line-height: 1;
+  letter-spacing: .05em;
+}
+
+h2 {
+  padding-top: .5em;
+  font-size: 1.4em;
+}
+
+h3 {
+  padding-top: 2.5em;
+  font-size: 1em;
+}
+
+h4 {
+  padding-top: .1em;
+  font-size: 1.2em;
+}
+
+h5 {
+  padding-top: 13em;
+  font-size: 1.1em;
+}
+
+h6 {
+  padding-top: -5em;
+  font-size: .75em;
 }

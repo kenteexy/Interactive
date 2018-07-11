@@ -1,3 +1,19 @@
 body {
-  background: rgb(0, 160, 140);
+  max-width: 20px;
+  font-family: comic, cursive, fantasy;
+  align-items: right;
+  background: DarkCyan;
+  color: Azure;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: Azure;
+    cursor: pointer;
+}
+
+#table-of-contents ul {
+  padding: 0;
+  list-style-type: none;
 }

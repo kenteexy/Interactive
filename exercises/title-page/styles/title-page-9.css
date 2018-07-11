@@ -1,4 +1,21 @@
 body {
-  background: blue;
+  background: SteelBlue;
   color: white;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration-line:overline;
+    text-decoration-style: wavy;
+    text-decoration-color: SpringGreen;
+}
+
+
+#table-of-contents ul {
+  padding: 0;
+  list-style-type: none;
 }
