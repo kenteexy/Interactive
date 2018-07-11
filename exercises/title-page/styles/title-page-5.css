@@ -2,7 +2,7 @@ body {
   background: rgb(254,255,215);
   color: black;
   font-size: 22px;
-  font-family: 'Book-Antiqua', Cambria, Garamond, sans-serif;
+  font-family: 'Book-Antiqua', Cambria, Garamond, serif;
 }
 
 * {
