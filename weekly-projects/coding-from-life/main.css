@@ -1,14 +1,14 @@
 /* FRAME */
 
 body {
-  background: black;
+  background: rgb(150,111,51); /* Wood Color */
 }
 
 .canvas {
-  width: 900px;
-  height: 550px;
+  width: 1200px;
+  height: 600px;
   z-index: -3;
-  margin: 100px auto;
+  margin: 5% auto;
   background: white;
   position: relative;
 }
@@ -42,7 +42,7 @@ body {
 
 #orange-roll {
   bottom: 400px;
-  left: 25px;
+  left: 200px;
   width: 800px;
   height: 50px;
   z-index: -1;
@@ -56,7 +56,7 @@ body {
 
 #tomato {
   bottom: 300px;
-  left: 100px;
+  left: 300px;
   width: 150px;
   height: 120px;
   background: red;
@@ -65,29 +65,45 @@ body {
   border-radius: 100px / 50px;
 }
 
-#stems .stem-a, .stem-b, .stem-c {
+.stems {
+  width: 5px;
+  height: 30px;
   background: green;
-  display: inline-block;
+  z-index: 1;
 }
 
-#stems .stem-a {
-  width: 3px;
-  height: 18px;
+#stem-a {
+  bottom: 400px;
+  left: 375px;
+  width: 5px;
+  height: 30px;
+  background: green;
+  z-index: 1;
 }
 
-#stems .stem-b {
-  width: 3px;
-  height: 22px;
+#stem-b {
+  bottom: 400px;
+  left: 375px;
+  width: 5px;
+  height: 30px;
+  background: green;
+  z-index: 1;
+  transform: rotate(60deg);
 }
 
-#stems .stem-c {
-  width: 3px;
-  height: 20px;
+#stem-c {
+  bottom: 400px;
+  left: 375px;
+  width: 5px;
+  height: 30px;
+  background: green;
+  z-index: 1;
+  transform: rotate(-60deg);
 }
 
 #lemon {
   bottom: 300px;
-  left: 250px;
+  left: 450px;
 	width: 100px;
 	height: 100px;
 	background: yellow;
@@ -98,7 +114,7 @@ body {
 
 #red-ball {
   bottom: 200px;
-  left: 400px;
+  left: 600px;
 	width: 100px;
 	height: 100px;
 	background: red;
