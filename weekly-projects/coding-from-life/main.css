@@ -75,29 +75,17 @@ body {
 #stem-a {
   bottom: 400px;
   left: 375px;
-  width: 5px;
-  height: 30px;
-  background: green;
-  z-index: 1;
 }
 
 #stem-b {
   bottom: 400px;
   left: 375px;
-  width: 5px;
-  height: 30px;
-  background: green;
-  z-index: 1;
   transform: rotate(60deg);
 }
 
 #stem-c {
   bottom: 400px;
   left: 375px;
-  width: 5px;
-  height: 30px;
-  background: green;
-  z-index: 1;
   transform: rotate(-60deg);
 }
 

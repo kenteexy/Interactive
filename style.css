@@ -1,0 +1,46 @@
+body {
+  font-family: comic, cursive, fantasy;
+  align-items: right;
+  background: white;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+}
+
+.object {
+  position: absolute;
+}
+
+#tomato {
+  bottom: 150px;
+  left: 1200px;
+  width: 150px;
+  height: 120px;
+  background: red;
+  -moz-border-radius: 100px / 50px;
+  -webkit-border-radius: 100px / 50px;
+  border-radius: 100px / 50px;
+}
+
+.stems {
+  width: 5px;
+  height: 30px;
+  background: green;
+  z-index: 1;
+}
+
+#stem-a {
+  bottom: 250px;
+  left: 1275px;
+}
+
+#stem-b {
+  bottom: 250px;
+  left: 1275px;
+  transform: rotate(60deg);
+}
+
+#stem-c {
+  bottom: 250px;
+  left: 1275px;
+  transform: rotate(-60deg);
+}
