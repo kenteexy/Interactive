@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exercise 1</title>
+  </head>
+
+  <body>
+    <h1>Click</h1>
+    Content
+
+    <!--JS goes right before the body ends-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    // This is a comment in JS
+
+    $(document).ready(function() {
+      console.log("hello jquery");
+      $('body').css('background', 'yellow');
+      $('h1').click(function() {
+        $('body').css('background', 'red');
+      })
+    });
+
+    alert("Hello World Here!");
+    console.log("Hello World in Console!");
+
+    var name = "Kentaro Matsuoka";
+    console.log(name);
+
+
+    function hello() {
+      var boo = true;
+      var greet = ("Hello Again World! It's ");
+      var date = new Date();
+      console.log(boo + greet + date);
+    }
+    hello();
+    </script>
+  </body>
+</html>

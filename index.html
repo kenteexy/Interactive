@@ -29,11 +29,22 @@
       <li><a href="exercises/title-page/title-page-1.html">Title Page</a></li>
     </ul>
 
+    <marquee><h6>Catch Me If You Can</h6></marquee>
+
     <div id="webring">
       <a href="http://hyungcho.github.io/interactive2/" class="previous">Previous</a>
       <a href="http://summer2018-yale.matt-wolff.com/people" class="home">To Class Page</a>
       <a href="https://devmer2.github.io/interactive/" class="next">Next</a>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function() {
+      $('h6').click(function() {
+        $('body').css('background', 'steelblue');
+      })
+    });
+    </script>
   </body>
 </html>
