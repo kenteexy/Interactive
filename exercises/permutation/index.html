@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Permutation Workshop</title>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	  <style>
+	  body {
+	    margin: 8px;
+			background-image: url("p/earth.jpg");
+	  }
+	  * {
+	    font-family: sans-serif;
+	    font-size: 6vw;
+	    margin: 0;
+	    padding: 0;
+	    list-style-type: none;
+	    font-weight: normal;
+	    text-decoration: none;
+	    color: white;
+	  }
+	  img {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+	  }
+	  </style>
+	</head>
+	<body>
+
+		<img id="something" src="" />
+		<h1 id="text">Who Am I?</h1>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+
+			var delay = 1000 //Delay in milliseconds
+
+			// Arrays
+			var myImageArray = ["p/bezos.jpg", "p/bill.jpg", "p/clooney.jpg", "p/dimon.jpg", "p/dubya.jpg", "p/erdogan.jpg", "p/francis.jpg", "p/gates.jpg", "p/hillary.jpg", "p/hu.jpg", "p/jobs.jpg", "p/kim.jpg", "p/lagarde.jpg", "p/merkel.jpg", "p/obama.jpg", "p/oprah.jpg", "p/putin.jpg", "p/rice.jpg", "p/suukyi.jpg", "p/warren.jpg", "p/xi.jpg"];
+			var myTextArray = ["Bezos", "Bill", "Clooney", "Dimon", "Dubya", "Erdogan", "Francis", "Gates", "Hillary", "Hu", "Jobs", "Kim", "LaGarde", "Merkel", "Obama", "Oprah", "Putin", "Rice", "Suu Kyi", "Warren", "Xi"];
+
+			// HTML Elements
+			var imageContainer = document.getElementById('something'); // plain JS
+			var textContainer = $('#text'); // jQuery
+
+			// Function to randomly select a string from "myImageArray" & "myTextArray"
+	    function updateImageText() {
+	        i = Math.floor(Math.random() * myImageArray.length);
+	        imageContainer.src = myImageArray[i]; //plain JS
+	        console.log("Image: " + i);
+	        textContainer.html(myTextArray[i]); // jQuery
+	        console.log("Text: " + i);
+	    };
+
+			// Execute randomizer functions with delay
+			setInterval(function() {
+					updateImageText();
+			}, delay);
+		});
+		</script>
+	</body>
+</html>
