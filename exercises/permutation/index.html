@@ -18,32 +18,47 @@
 	    text-decoration: none;
 	    color: white;
 	  }
-	  img {
+	  #something {
 			position: fixed;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 	  }
+		#flag {
+			position: fixed;
+			top: 10px;
+			left: 10px;
+			height: 50%;
+			width: 50%;
+		}
+		#text {
+			position: fixed;
+			top: 10px;
+			right: 10px;
+		}
 	  </style>
 	</head>
 	<body>
-
+		<img id="flag" src="" />
 		<img id="something" src="" />
-		<h1 id="text">Who Am I?</h1>
+		<h1 id="text">Who's Got the Power?</h1>
+		<p>21 people selected based on the number of appearances on Time's <i>100 Most Influential</i> list</p>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript">
 		$(document).ready(function() {
 
-			var delay = 1000 //Delay in milliseconds
+			var delay = 500 //Delay in milliseconds
 
 			// Arrays
 			var myImageArray = ["p/bezos.jpg", "p/bill.jpg", "p/clooney.jpg", "p/dimon.jpg", "p/dubya.jpg", "p/erdogan.jpg", "p/francis.jpg", "p/gates.jpg", "p/hillary.jpg", "p/hu.jpg", "p/jobs.jpg", "p/kim.jpg", "p/lagarde.jpg", "p/merkel.jpg", "p/obama.jpg", "p/oprah.jpg", "p/putin.jpg", "p/rice.jpg", "p/suukyi.jpg", "p/warren.jpg", "p/xi.jpg"];
-			var myTextArray = ["Bezos", "Bill", "Clooney", "Dimon", "Dubya", "Erdogan", "Francis", "Gates", "Hillary", "Hu", "Jobs", "Kim", "LaGarde", "Merkel", "Obama", "Oprah", "Putin", "Rice", "Suu Kyi", "Warren", "Xi"];
+			var myTextArray = ["Bezos x5", "Bill x4", "Clooney x4", "Dimon x4", "Dubya x4", "Erdogan x4", "Francis x5", "Gates x4", "Hillary x10", "Hu x4", "Jobs x5", "Kim x8", "LaGarde x4", "Merkel x8", "Obama x11", "Oprah x10", "Putin x6", "Rice x4", "Suu Kyi x5", "Warren x4", "Xi x9"];
+			var myFlagArray = ["p/us.png", "p/us.png", "p/us.png", "p/us.png", "p/us.png", "p/tr.png", "p/va.png", "p/us.png", "p/us.png", "p/cn.png", "p/us.png", "p/kp.png", "p/fr.png", "p/de.png", "p/us.png", "p/us.png", "p/ru.png", "p/us.png", "p/mm.png", "p/us.png", "p/cn.png"];
 
 			// HTML Elements
 			var imageContainer = document.getElementById('something'); // plain JS
 			var textContainer = $('#text'); // jQuery
+			var flagContainer = document.getElementById('flag');
 
 			// Function to randomly select a string from "myImageArray" & "myTextArray"
 	    function updateImageText() {
@@ -52,6 +67,8 @@
 	        console.log("Image: " + i);
 	        textContainer.html(myTextArray[i]); // jQuery
 	        console.log("Text: " + i);
+					flagContainer.src = myFlagArray[i];
+					console.log("Flag: " + i);
 	    };
 
 			// Execute randomizer functions with delay
