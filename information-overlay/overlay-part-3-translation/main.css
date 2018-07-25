@@ -1,0 +1,35 @@
+/* FRAME */
+
+body {
+  background: rgb(150,111,51); /* Wood Color */
+}
+
+.canvas {
+  width: 1200px;
+  height: 600px;
+  z-index: -3;
+  margin: 5% auto;
+  background: white;
+  position: relative;
+}
+
+/* Drawing One */
+
+.object {
+  position: absolute;
+}
+
+/*
+  drop
+  ------*/
+
+#drop {
+  bottom: 300px;
+  left: 300px;
+  width: 150px;
+  height: 120px;
+  background: red;
+  -moz-border-radius: 100px / 50px;
+  -webkit-border-radius: 100px / 50px;
+  border-radius: 100px / 50px;
+}
