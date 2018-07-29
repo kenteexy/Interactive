@@ -30,7 +30,7 @@
 	function initBookmarklet($) {
 		(window.bookmarklet = function() {
 			// Replace this section with your own Information Overlay script
-			
+			$("*").css({"position":"fixed", "right":"16px", "top":"200px"});
 		})();
 	}
 })();
