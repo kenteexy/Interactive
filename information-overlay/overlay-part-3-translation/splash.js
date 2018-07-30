@@ -31,18 +31,24 @@
   // My Bookmarklet
 	function initBookmarklet($) {
 		(window.bookmarklet = function() {
-      // Randomly choose a value for element attributes. May be used for:
-      // 1) Choosing x- or y- coordinate for "collection point" of elements where variable a is a window dimension
-      // 2) Choosing a rotation value for an element where variable a is a fixed degree value
-      function rand(a) {
+      // Randomly get a value for element attributes. May be used for:
+      // 1) Getting x- or y- coordinate for "collection point" of elements where variable a is a window dimension
+      // 2) Getting a rotation value for an element where variable a is a fixed degree value
+      function getRandInt(a) {
         return Math.floor(Math.random() * a) + 1;
       }
-		  console.log(rand(100));
-			//var z = rand(10);
+			// Randomly get a decimal number between defined min and max.
+			// Used to get a large decimal for opacity attribute, so element is readily visible
+			function getBigDecimal(min, max) {
+				return Math.random() * (max - min) + min;
+			}
+		  console.log(getRandInt(100));
+			console.log(getBigDecimal(0.8, 1.0));
       //var x = rand(window.innerWidth) + "px";
       //var y = rand(window.innerHeight) + "px";
       //var x = window.innerWidth * 0.5 + "px";
       //var y = window.innerWidth * 0.5 + "px";
+		  //var z = rand(10);
 
 			/**
 			function move() {
@@ -67,13 +73,13 @@
         "position": "absolute",
         "left": "50%",
         "top": "50%",
-        "-webkit-transform": "translate(-50%,-50%) rotate(" + rand(360) + "deg)",
-        "-moz-transform": "translate(-50%,-50%) rotate(" + rand(360) + "deg)",
-        "-ms-transform": "translate(-50%,-50%) rotate(" + rand(360) + "deg)",
-        transform: "translate(-50%,-50%) rotate(" + rand(360) + "deg)",
+        "-webkit-transform": "translate(-50%,-50%) rotate(" + getRandInt(360) + "deg)",
+        "-moz-transform": "translate(-50%,-50%) rotate(" + getRandInt(360) + "deg)",
+        "-ms-transform": "translate(-50%,-50%) rotate(" + getRandInt(360) + "deg)",
+        transform: "translate(-50%,-50%) rotate(" + getRandInt(360) + "deg)",
         height: "auto",
         width: "auto",
-				opacity: Math.random(),
+				opacity: getBigDecimal(0.8, 1.0),
 				// z-index: z
       });
 
