@@ -35,15 +35,15 @@
       function chooseLoc(a) {
         return Math.floor(Math.random() * a) + 1;
       }
-      //var x = chooseLoc(window.innerWidth) + "px";
-      //var y = chooseLoc(window.innerHeight) + "px";
-      var x = window.innerWidth * 0.5 + "px";
-      var y = window.innerWidth * 0.5 + "px";
+      var x = chooseLoc(window.innerWidth) + "px";
+      var y = chooseLoc(window.innerHeight) + "px";
+      //var x = window.innerWidth * 0.5 + "px";
+      //var y = window.innerWidth * 0.5 + "px";
 
 			$("*").css({
-        "position": "absolute",
-        "left": "50%",
-        "top": "50%",
+        "position": "fixed",
+        "left": x,
+        "top": y,
         //"-webkit-transform": "rotate(" + chooseLoc(360) + "deg)",
         //"-moz-transform": "rotate(" + chooseLoc(360) + "deg)",
         //"-ms-transform": "rotate(" + chooseLoc(360) + "deg)",
