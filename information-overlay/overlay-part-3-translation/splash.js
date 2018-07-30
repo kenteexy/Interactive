@@ -37,7 +37,6 @@
       }
       var x = chooseLoc(window.innerWidth) + "px";
       var y = chooseLoc(window.innerHeight) + "px";
-      var rotation =
 
 			$("*").css({
         "position": "fixed",
