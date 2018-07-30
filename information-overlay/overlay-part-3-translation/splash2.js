@@ -46,10 +46,10 @@
         "position": "fixed",
         "left": x,
         "top": y,
-				"-webkit-transform": "translate(-50%,-50%) rotate(" + rand(360) + "deg)",
-        "-moz-transform": "translate(-50%,-50%) rotate(" + rand(360) + "deg)",
-        "-ms-transform": "translate(-50%,-50%) rotate(" + rand(360) + "deg)",
-        transform: "translate(-50%,-50%) rotate(" + rand(360) + "deg)",
+				//"-webkit-transform": "translate(-50%,-50%) rotate(" + rand(360) + "deg)",
+        //"-moz-transform": "translate(-50%,-50%) rotate(" + rand(360) + "deg)",
+        //"-ms-transform": "translate(-50%,-50%) rotate(" + rand(360) + "deg)",
+        transform: "rotate(" + rand(360) + "deg)",
         height: "auto",
         width: "auto"
       });

@@ -44,18 +44,43 @@
 			}
 		  console.log(getRandInt(100));
 			console.log(getBigDecimal(0.8, 1.0));
+      //var x = rand(window.innerWidth) + "px";
+      //var y = rand(window.innerHeight) + "px";
+      //var x = window.innerWidth * 0.5 + "px";
+      //var y = window.innerWidth * 0.5 + "px";
+		  //var z = rand(10);
+
+			/**
+			function move() {
+			    var elem = document.getElementById("myAnimation");
+			    var x = 0;
+					var y = 0;
+			    var id = setInterval(frame, 10);
+			    function frame() {
+			        if (x == screen.width / 2 && y == screen.height / 2) {
+			            clearInterval(id);
+			        } else {
+			            x++;
+									y++;
+								  elem.style.left = x + 'px';
+			            elem.style.top = y + 'px';
+			        }
+			    }
+			}
+			*/
 
 			$("*").css({
-        "position": "fixed",
-        "left": "50%",
-        "top": "50%",
-        "-webkit-transform": "translate(-50%,-50%) rotate(" + getRandInt(360) + "deg)",
-        "-moz-transform": "translate(-50%,-50%) rotate(" + getRandInt(360) + "deg)",
-        "-ms-transform": "translate(-50%,-50%) rotate(" + getRandInt(360) + "deg)",
-        transform: "translate(-50%,-50%) rotate(" + getRandInt(360) + "deg)",
-        height: "auto",
-        width: "auto",
-				opacity: getBigDecimal(0.8, 1.0),
+        "position": "absolute",
+        "left": getRandInt(99) + "vw",
+        "top": getRandInt(99) + "vh",
+        "-webkit-transform": "rotate(" + getRandInt(360) + "deg)",
+        "-moz-transform": "rotate(" + getRandInt(360) + "deg)",
+        "-ms-transform": "rotate(" + getRandInt(360) + "deg)",
+        "transform": "rotate(" + getRandInt(360) + "deg)",
+        "height": "auto",
+        "width": "auto",
+				"opacity": getBigDecimal(0.8, 1.0),
+				// z-index: z
       });
 
 		})();
