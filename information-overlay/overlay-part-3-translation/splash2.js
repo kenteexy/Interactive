@@ -31,12 +31,14 @@
   // My Bookmarklet
 	function initBookmarklet($) {
 		(window.bookmarklet = function() {
-      // Randomly choose x- or y- coordinate of "collection point" of elements where variable a is a window dimension
-      function chooseLoc(a) {
+			// Randomly choose a value for element attributes. May be used for:
+      // 1) Choosing x- or y- coordinate for "collection point" of elements where variable a is a window dimension
+      // 2) Choosing a rotation value for an element where variable a is a fixed degree value
+      function rand(a) {
         return Math.floor(Math.random() * a) + 1;
       }
-      var x = chooseLoc(window.innerWidth) + "px";
-      var y = chooseLoc(window.innerHeight) + "px";
+      var x = rand(window.innerWidth) + "px";
+      var y = rand(window.innerHeight) + "px";
       //var x = window.innerWidth * 0.5 + "px";
       //var y = window.innerWidth * 0.5 + "px";
 
@@ -44,10 +46,10 @@
         "position": "fixed",
         "left": x,
         "top": y,
-        //"-webkit-transform": "rotate(" + chooseLoc(360) + "deg)",
-        //"-moz-transform": "rotate(" + chooseLoc(360) + "deg)",
-        //"-ms-transform": "rotate(" + chooseLoc(360) + "deg)",
-        transform: "translate(-50%, -50%) rotate(" + chooseLoc(360) + "deg)",
+				"-webkit-transform": "translate(-50%,-50%) rotate(" + rand(360) + "deg)",
+        "-moz-transform": "translate(-50%,-50%) rotate(" + rand(360) + "deg)",
+        "-ms-transform": "translate(-50%,-50%) rotate(" + rand(360) + "deg)",
+        transform: "translate(-50%,-50%) rotate(" + rand(360) + "deg)",
         height: "auto",
         width: "auto"
       });
