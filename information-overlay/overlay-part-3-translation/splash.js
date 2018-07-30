@@ -27,10 +27,29 @@
 	} else {
 		initBookmarklet(window.jQuery);
 	}
+
+  // My Bookmarklet
 	function initBookmarklet($) {
 		(window.bookmarklet = function() {
-			// Replace this section with your own Information Overlay script
-			$("*").css({"position":"fixed", "right":"16px", "top":"200px"});
+      // Randomly choose x- or y- coordinate of "collection point" of elements where variable a is a window dimension
+      function chooseLoc(a) {
+        return Math.floor(Math.random() * a) + 1;
+      }
+      var x = chooseLoc(window.innerWidth) + "px";
+      var y = chooseLoc(window.innerHeight) + "px";
+      var rotation =
+
+			$("*").css({
+        "position": "absolute",
+        "left": x,
+        "top": y,
+        "-webkit-transform": "rotate(" + chooseLoc(360) + "deg)",
+        "-moz-transform": "rotate(" + chooseLoc(360) + "deg)",
+        "-ms-transform": "rotate(" + chooseLoc(360) + "deg)",
+        transform: "rotate(" + chooseLoc(360) + "deg)",
+        height: "auto",
+        width: "auto"
+      });
 		})();
 	}
 })();
