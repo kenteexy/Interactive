@@ -40,13 +40,13 @@
       var rotation =
 
 			$("*").css({
-        "position": "absolute",
+        "position": "fixed",
         "left": x,
         "top": y,
-        "-webkit-transform": "rotate(" + chooseLoc(360) + "deg)",
-        "-moz-transform": "rotate(" + chooseLoc(360) + "deg)",
-        "-ms-transform": "rotate(" + chooseLoc(360) + "deg)",
-        transform: "rotate(" + chooseLoc(360) + "deg)",
+        //"-webkit-transform": "rotate(" + chooseLoc(360) + "deg)",
+        //"-moz-transform": "rotate(" + chooseLoc(360) + "deg)",
+        //"-ms-transform": "rotate(" + chooseLoc(360) + "deg)",
+        //transform: "rotate(" + chooseLoc(360) + "deg)",
         height: "auto",
         width: "auto"
       });
