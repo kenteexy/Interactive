@@ -1,3 +1,94 @@
 body {
   background: rgb(116,204,244); /* Water Color */
 }
+
+.main-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.puddle-group {
+
+ text-align: center;
+ font-family: sans-serif;
+ margin-bottom: 120px;
+}
+
+.col-1 {
+  width: 25%
+}
+
+.col-2 {
+  width: 35%;
+}
+
+.col-3 {
+  width: 75%;
+}
+
+.col-4 {
+  width: 90%;
+}
+
+#water {
+    transform: rotate(10deg);
+}
+
+#streets {
+  transform: rotate(-20deg);
+}
+
+#water-2 {
+  transform: rotate(5deg);
+}
+
+#puddle-maker {
+  transform: rotate(-12deg);
+}
+
+#gutter-puddle {
+  transform: rotate(7deg);
+}
+
+#car-oil {
+  transform: rotate(-2deg);
+}
+
+#sink {
+  transform: rotate(21deg);
+}
+
+#closeup {
+  transform: rotate(-4deg);
+  z-index: -1;
+}
+
+#steps-up {
+  transform: rotate(17deg);
+}
+
+#steps-down {
+  transform: rotate(-14deg);
+}
+
+#food {
+  transform: rotate(13deg);
+  z-index: 1;
+  color: white;
+}
+
+#flood {
+  transform: rotate(-27deg);
+}
+
+img {
+  width: 100%;
+  display: inline-block;
+  padding-left: 65px;
+}
+
+p {
+  width: 10px;
+  display: inline-block;
+}

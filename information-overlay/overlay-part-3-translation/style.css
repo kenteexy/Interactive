@@ -2,11 +2,56 @@ body {
   background: rgb(116,204,244); /* Water Color */
 }
 
-#myContainer {
-    width: 100%;
-    height: 100%;
-    position: relative;
+.container {
+  margin: auto;
+  position: relative;
+  width: 20%;
 }
-#myAnimation {
-    position: absolute;
+
+.image {
+  margin: auto;
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .25;
+  transition: .5s ease;
+  background-color: rgb(116,204,244);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.center-1 {
+  position: absolute;
+  top: 125px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  margin: auto;
+  padding: 0 20px;
+  transform: rotate(30deg);
+}
+
+.center-2 {
+  position: absolute;
+  top: 900px;
+  left: -300px;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  margin: auto;
+  padding: 0 20px;
+  transform: rotate(-20deg);
 }

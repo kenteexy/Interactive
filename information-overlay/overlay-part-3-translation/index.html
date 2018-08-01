@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  	<title>Overlay Part 3: Translation</title>
+  	<title>Splash Bookmarklet</title>
     <meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <h1>Overlay Part 3:  Translation</h1>
+    <div class="center-1">
 
     <img src="puddle.jpg" alt="puddle"/>
     <p><i>A Puddle</i> from the "Puddle" <i>Wikipedia</i> page</p>
 
-    <h1><a class="bookmarklet" href="javascript:(function(){document.head.appendChild(document.createElement('script')).src='https://kenteexy.github.io/Interactive/information-overlay/overlay-part-3-translation/splash.js';})();">Splash</a></h1>
+    <div class="container">
+    <img src="puddle-icon.png" alt="Puddle" class="image">
+      <div class="overlay">
+          <h1><a class="bookmarklet" href="javascript:(function(){document.head.appendChild(document.createElement('script')).src='https://kenteexy.github.io/Interactive/information-overlay/overlay-part-3-translation/splash.js';})();">Splash!</a></h1>
+      </div>
+    </div>
+    <p>Drag ↗Bookmarklet↗ to your browser's bookmarks bar to make a <i>S P L A S H</i></p>
+    <p>Bookmarklet by Kentaro Matsuoka (August 2018)</p>
 <!--
     <h1><a class="bookmarklet" href="javascript:(function(){document.head.appendChild(document.createElement('script')).src='splash.js';})();">Splash</a></h1>
 -->
+    </div>
+
+    <div class="center-2">
     <h2>Sample Screenshots</h2>
-    <h3>Google</h3>
-    <img src="screenshots/google.jpg" style="width: 1280px; margin-bottom: 1.5em;" alt="Google" />
-    <h3>W3 Schools:  JavaScript Random</h3>
-    <img src="screenshots/w3schools-js-random.jpg" style="width: 1280px; margin-bottom: 1.5em;" alt="W3 JS Random" />
-    <hr />
-    <h3>W3 Schools:  CSS Dropdowns</h3>
-    <img src="screenshots/w3schools-css-dropdowns.jpg" style="width: 1280px; margin-bottom: 1.5em;" alt="W3 CSS Dropdowns" />
-    <hr />
+    <p><a href=screenshots/google.jpg>Google</a></p>
+    <p><a href=screenshots/w3schools-js-random.jpg>W3 Schools:  JavaScript Random</a></p>
+    <p><a href=screenshots/w3schools-css-dropdowns.jpg>W3 Schools:  CSS Dropdowns</a></p>
 
-    <h2>Wireframe Sketch of Prototype</h2>
-    <img src="wireframe-sketch-of-prototype.jpg" style="width: 700px; margin-bottom: 1.5em;" alt="Wireframe Prototype" />
+    <h2>Other Stuff</h2>
+    <p><a href=wireframe-sketch-of-prototype.jpg>Wireframe Sketch of Prototype</a></p>
+    <p><a href=../overlay-part-2-typifying/index.html>More Puddles</a></p>
 
+    <hr />
+    <br />
+    <a href="../../index.html">🏠ホーム🏠HOME🏠</a>
+    </div>
     <!-- This is jQuery! -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -41,8 +51,5 @@
       console.log(greeting + date);
     });
     </script>
-    <hr>
-    <br>
-    <a href="../../index.html">🏠ホーム🏠HOME🏠</a>
   </body>
 </html>
