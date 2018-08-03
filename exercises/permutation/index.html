@@ -19,36 +19,37 @@
 	    color: white;
 	  }
 	  #something {
-			position: fixed;
+			position: absolute;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 	  }
 		#flag {
-			position: fixed;
-			top: 10px;
+			position: absolute;
+			bottom: 10px;
 			left: 10px;
-			height: 50%;
-			width: 50%;
+			height: 25%;
+			width: 25%;
 		}
 		#text {
-			position: fixed;
-			top: 10px;
+			position: absolute;
+			bottom: 10px;
 			right: 10px;
 		}
 	  </style>
 	</head>
+
 	<body>
-		<img id="flag" src="" />
-		<img id="something" src="" />
+		<img id="flag" src="p/un.png" />
+		<img id="something" src="p/smiley.png" />
 		<h1 id="text">Who's Got the Power?</h1>
-		<p>21 people selected based on the number of appearances on Time's <i>100 Most Influential</i> list</p>
+		<p style="font-size:28pt;">21 people selected based on the number of appearances on Time's <i style="font-size:28pt;">100 Most Influential</i> list</p>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript">
 		$(document).ready(function() {
 
-			var delay = 500 //Delay in milliseconds
+			var delay = 750 //Delay in milliseconds
 
 			// Arrays
 			var myImageArray = ["p/bezos.jpg", "p/bill.jpg", "p/clooney.jpg", "p/dimon.jpg", "p/dubya.jpg", "p/erdogan.jpg", "p/francis.jpg", "p/gates.jpg", "p/hillary.jpg", "p/hu.jpg", "p/jobs.jpg", "p/kim.jpg", "p/lagarde.jpg", "p/merkel.jpg", "p/obama.jpg", "p/oprah.jpg", "p/putin.jpg", "p/rice.jpg", "p/suukyi.jpg", "p/warren.jpg", "p/xi.jpg"];
