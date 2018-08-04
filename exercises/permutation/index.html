@@ -6,11 +6,17 @@
 	  <style>
 	  body {
 	    margin: 8px;
+			background-color: black;
 			background-image: url("p/earth.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			min-width: 400px;
+			width: auto !important;
+	    width: 1000px;
 	  }
 	  * {
 	    font-family: sans-serif;
-	    font-size: 6vw;
+	    font-size: 4vw;
 	    margin: 0;
 	    padding: 0;
 	    list-style-type: none;
@@ -18,18 +24,20 @@
 	    text-decoration: none;
 	    color: white;
 	  }
-	  #something {
+		img {
+			height: auto;
+      width:25%;
+		}
+	  #face {
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			transform: translate(-50%, -50%);
+			transform: translate(-50%, -35%);
 	  }
 		#flag {
 			position: absolute;
 			bottom: 10px;
 			left: 10px;
-			height: 25%;
-			width: 25%;
 		}
 		#text {
 			position: absolute;
@@ -41,9 +49,9 @@
 
 	<body>
 		<img id="flag" src="p/un.png" />
-		<img id="something" src="p/smiley.png" />
+		<img id="face" src="p/smiley.png" />
 		<h1 id="text">Who's Got the Power?</h1>
-		<p style="font-size:28pt;">21 people selected based on the number of appearances on Time's <i style="font-size:28pt;">100 Most Influential</i> list</p>
+		<p style="text-align:center;">21 people selected based on the number of appearances on Time's <i style="text-align:center;">100 Most Influential</i> list</p>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript">
@@ -57,7 +65,7 @@
 			var myFlagArray = ["p/us.png", "p/us.png", "p/us.png", "p/us.png", "p/us.png", "p/tr.png", "p/va.png", "p/us.png", "p/us.png", "p/cn.png", "p/us.png", "p/kp.png", "p/fr.png", "p/de.png", "p/us.png", "p/us.png", "p/ru.png", "p/us.png", "p/mm.png", "p/us.png", "p/cn.png"];
 
 			// HTML Elements
-			var imageContainer = document.getElementById('something'); // plain JS
+			var imageContainer = document.getElementById('face'); // plain JS
 			var textContainer = $('#text'); // jQuery
 			var flagContainer = document.getElementById('flag');
 
