@@ -2,95 +2,91 @@ body {
   font-size: 1.5vw;
   font-family: comic, cursive, fantasy, sans-seif, serif;
   align-items: right;
-  background: aquamarine;
-  color: gray;
+  color: silver;
   -webkit-font-smoothing: antialiased;
+  margin: 8px;
+  background-color: black;
+  background-image: url("background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: auto;
+  min-width: 400px;
+  width: auto !important;
+  width: 1000px;
 }
 
 .object {
   position: absolute;
 }
 
-#title {
+div {
   position: absolute;
-  top: 20%;
-  left: 5%;
-  transform: rotate3d(1, 1, 1, 45deg);
+  z-index: 5;
+}
+
+#title {
+  font-size: 2vw;
+  top: 1vw;
+  left: 10vw;
+  transform: rotate3d(1, 1, 1, -10deg);
+}
+
+#about {
+  position: relative;
+  font-size: 80%;
+  left: 10vw;
 }
 
 #overlay {
-  position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 20vw;
+  left: 40vw;
   transform: rotate3d(1, 1, 1, -45deg);
 }
 
 #projects {
-  position: absolute;
-  top: 10%;
-  left: 60%;
-  transform: rotate3d(1, 2, 1, 55deg);
+  top: 5vw;
+  left: 60vw;
+  transform: rotate3d(1, 2, 1, 45deg);
 }
 
 #exercises {
-  position: absolute;
-  top: 50%;
-  left: 10%;
+  top: 15vw;
+  left: 10vw;
   transform: rotate3d(2, 1, 2, -35deg);
 }
 
 #readings {
-  position: absolute;
-  left: 70%;
-  top: 60%;
-  transform: rotate3d(2, 2, 1,65deg);
+  left: 80vw;
+  top: 25vw;
+  transform: rotate3d(2, 2, 1, 50deg);
 }
 
 #webring {
-  position: absolute;
-  top: 80%;
-  left: 25%;
+  top: 40vw;
+  left: 7.5vw;
   transform: rotate3d(1, 2, 2, -15deg);
 }
 
 #reset {
   position: absolute;
-  top: 85%;
-  left: 40%;
+  top: 42.5vw;
+  left: 20vw;
   transform: rotate3d(1, 2, 2, -15deg);
 }
 
-#tomato {
-  top: 300px;
-  left: 1300px;
-  width: 150px;
-  height: 120px;
-  background: cornflowerblue;
-  -moz-border-radius: 100px / 50px;
-  -webkit-border-radius: 100px / 50px;
-  border-radius: 100px / 50px;
+marquee {
+  position: absolute;
+  top: 60vh;
+  z-index: auto;
 }
 
-.stems {
-  width: 5px;
-  height: 30px;
-  background: fuchsia;
-  z-index: 1;
+img {
+  height: auto;
+  width: 30vw;
 }
 
-#stem-a {
-  top: 300px;
-  left: 1375px;
-}
-
-#stem-b {
-  top: 300px;
-  left: 1375px;
-  transform: rotate(60deg);
-}
-
-#stem-c {
-  top: 300px;
-  left: 1375px;
-  transform: rotate(-60deg);
+#icon {
+  top: auto;
+  left: 35vw;
+  z-index: 4;
 }

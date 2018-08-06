@@ -9,7 +9,7 @@
 
     <div id="title">
       <h1>Kentaro's Class Website</h1>
-      <a href="about.html">About</a>
+      <a href="about.html" id="about">About</a>
     </div>
 
     <div id="overlay">
@@ -55,27 +55,42 @@
       <a href="https://devmer2.github.io/interactive/" class="next">Next</a>
     </div>
 
-    <marquee><h6>Catch Me If You Can</h6></marquee>
-    <div class="object" id="tomato"></div>
-    <div class="object stems" id="stem-a"></div>
-    <div class="object stems" id="stem-b"></div>
-    <div class="object stems" id="stem-c"></div>
-    <button type="button" id="reset">Reset</button>
+    <div id="icon">
+      <img src="icon.png"/>
+    </div>
+    <marquee><h6>Catch/Click Me If You Can</h6></marquee>
+    <button type="button" id="reset">Reset!</button>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
 
     $(document).ready(function() {
-      $('#tomato').click(function() {
-        $('body').css('background', 'cornflowerblue');
+      $("#icon").click(function() {
+        $("body").css({"color": "aquamarine",
+            "background-color": "aquamarine",
+            "background-image": "url('icon-large.png')",
+            "background-position-x": "center",
+            "background-position-y": "5vh",
+            "background-size": "45%",
+            "background-repeat": "no-repeat",
+        });
+        $("a").css("color", "aquamarine");
+        $("#icon").css("opacity", "0");
       });
-      $('h6').click(function() {
-        $('body').css('background', 'steelblue');
-        $('body').css('color', 'white');
+      $("button").click(function() {
+        $("body").css({"color": "silver",
+            "margin": "8px",
+            "background-color": "black",
+            "background-image": "url('background.png')",
+            "background-size": "cover",
+            "background-position-y": "initial",
+            "background-repeat": "no-repeat"
+        });
+        $("a").css("color", "blue");
+        $("#icon").css("opacity", "1");
       });
-      $('button').click(function() {
-        $('body').css('background', 'aquamarine');
-        $('body').css('color', 'black');
+      $("h6").click(function() {
+        alert("You caught me! Now, try clicking on the aqua blue explosion in the center of the page. Also, the contents on this page adjust according to window size.");
       });
     });
     </script>
