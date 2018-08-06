@@ -1,16 +1,15 @@
 body {
   position: absolute;
-  top: 0;
+  top: 80%;
   left: 0;
   overflow: auto;
-  font-family: helvetica;
-  color: white;
+  font-family: helvetica, sans-serif, serif;
+  color: steelblue;
   margin: 0px;
   padding: 10px;
   z-index: 99;
-  background-color: salmon;
-  font-size: 15vw;
-
+  background-color: aquamarine;
+  font-size: 15vh;
 }
 #one {
 	display: block;
@@ -373,6 +372,4 @@ body {
 	#nine {
 		display: block;
 	}
-
-
 }

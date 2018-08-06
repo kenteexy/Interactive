@@ -23,17 +23,25 @@ body {
   soccer ball
   ------------*/
 
-#soccer-ball {
+#soccer {
+  top: 120px;
+  left: 240px;
   width: 300px;
   height: 300px;
   background: gray;
-  border-radius: 50%;
-  left: 25%;
-  top: 120px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  border-radius: 200px;
 }
 
 #stripe {
-
+  top: 270px;
+  left: 240px;
+  width: 300px;
+  height: 20px;
+  z-index: 1;
+  background: black;
+  transform: rotate(-30deg);
 }
 
 /*
@@ -41,9 +49,9 @@ body {
   -----------*/
 
 #orange-roll {
-  bottom: 400px;
-  left: 200px;
-  width: 800px;
+  top: 300px;
+  left: 300px;
+  width: 500px;
   height: 50px;
   z-index: -1;
   background: orange;
@@ -55,53 +63,64 @@ body {
   ------*/
 
 #tomato {
-  bottom: 300px;
-  left: 300px;
+  top: 300px;
+  left: 200px;
   width: 150px;
   height: 120px;
   background: red;
   -moz-border-radius: 100px / 50px;
   -webkit-border-radius: 100px / 50px;
   border-radius: 100px / 50px;
+  z-index: 2;
 }
 
 .stems {
   width: 5px;
   height: 30px;
   background: green;
-  z-index: 1;
+  z-index: 3;
 }
 
 #stem-a {
-  bottom: 400px;
-  left: 375px;
+  top: 300px;
+  left: 275px;
 }
 
 #stem-b {
-  bottom: 400px;
-  left: 375px;
+  top: 300px;
+  left: 275px;
   transform: rotate(60deg);
 }
 
 #stem-c {
-  bottom: 400px;
-  left: 375px;
+  top: 300px;
+  left: 275px;
   transform: rotate(-60deg);
 }
 
+/*
+  lemon
+  ------*/
+
 #lemon {
-  bottom: 300px;
-  left: 450px;
+  top: 350px;
+  left: 325px;
 	width: 100px;
 	height: 100px;
 	background: yellow;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
+	-moz-border-radius: 100px / 75px;
+	-webkit-border-radius: 100px / 75px;
+	border-radius: 100px / 75px;
+  z-index: 4;
+  transform: rotate(150deg);
 }
 
+/*
+  red-ball
+  ------*/
+
 #red-ball {
-  bottom: 200px;
+  top: 450px;
   left: 600px;
 	width: 100px;
 	height: 100px;
@@ -109,4 +128,8 @@ body {
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
+}
+
+#real {
+  font-size: 3vh;
 }

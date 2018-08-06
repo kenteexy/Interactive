@@ -4,7 +4,8 @@ body, html {
 }
 
 img {
-  width: 500px;
+  width: 200px;
+  length: auto;
   display: none;
 }
 
@@ -12,113 +13,299 @@ img {
 	display: block;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
 	#one {
 		display: none;
 	}
-
 	#two {
 		display: block;
 	}
-
 	#three {
 		display: none;
 	}
-
 	#four {
 		display: none;
 	}
-
 	#five {
 		display: none;
 	}
-
+  #six {
+    display: none;
+  }
+  #seven {
+    display: none;
+  }
+  #eight {
+    display: none;
+  }
+  #nine {
+    display: none;
+  }
+  #ten {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
 	#one {
 		display: none;
 	}
-
 	#two {
 		display: none;
 	}
-
 	#three {
 		display: block;
 	}
-
 	#four {
 		display: none;
 	}
-
 	#five {
 		display: none;
 	}
+  #six {
+    display: none;
+  }
+  #seven {
+    display: none;
+  }
+  #eight {
+    display: none;
+  }
+  #nine {
+    display: none;
+  }
+  #ten {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+	#one {
+		display: none;
+	}
+	#two {
+		display: none;
+	}
+	#three {
+		display: none;
+	}
+	#four {
+		display: block;
+	}
+	#five {
+		display: none;
+	}
+  #six {
+    display: none;
+  }
+  #seven {
+    display: none;
+  }
+  #eight {
+    display: none;
+  }
+  #nine {
+    display: none;
+  }
+  #ten {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+	#one {
+		display: none;
+	}
+	#two {
+		display: none;
+	}
+	#three {
+		display: none;
+	}
+	#four {
+		display: none;
+	}
+	#five {
+		display: block;
+	}
+  #six {
+    display: none;
+  }
+  #seven {
+    display: none;
+  }
+  #eight {
+    display: none;
+  }
+  #nine {
+    display: none;
+  }
+  #ten {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+	#one {
+		display: none;
+	}
+	#two {
+		display: none;
+	}
+	#three {
+		display: none;
+	}
+	#four {
+		display: none;
+	}
+	#five {
+		display: none;
+	}
+  #six {
+    display: block;
+  }
+  #seven {
+    display: none;
+  }
+  #eight {
+    display: none;
+  }
+  #nine {
+    display: none;
+  }
+  #ten {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+	#one {
+		display: none;
+	}
+	#two {
+		display: none;
+	}
+	#three {
+		display: none;
+	}
+	#four {
+		display: none;
+	}
+	#five {
+		display: none;
+	}
+  #six {
+    display: none;
+  }
+  #seven {
+    display: block;
+  }
+  #eight {
+    display: none;
+  }
+  #nine {
+    display: none;
+  }
+  #ten {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
 	#one {
 		display: none;
 	}
-
 	#two {
 		display: none;
 	}
-
 	#three {
 		display: none;
 	}
-
 	#four {
-		display: block;
+		display: none;
 	}
-
 	#five {
 		display: none;
 	}
+  #six {
+    display: none;
+  }
+  #seven {
+    display: none;
+  }
+  #eight {
+    display: block;
+  }
+  #nine {
+    display: none;
+  }
+  #ten {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
 	#one {
 		display: none;
 	}
-
 	#two {
 		display: none;
 	}
-
 	#three {
 		display: none;
 	}
-
 	#four {
 		display: none;
-
 	}
 	#five {
-		display: block;
+		display: none;
 	}
+  #six {
+    display: none;
+  }
+  #seven {
+    display: none;
+  }
+  #eight {
+    display: none;
+  }
+  #nine {
+    display: block;
+  }
+  #ten {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
 	#one {
 		display: none;
 	}
-
 	#two {
 		display: none;
 	}
-
 	#three {
 		display: none;
 	}
-
 	#four {
-		display:none;
+		display: none;
 	}
-
 	#five {
 		display: none;
 	}
+  #six {
+    display: none;
+  }
+  #seven {
+    display: none;
+  }
+  #eight {
+    display: none;
+  }
+  #nine {
+    display: none;
+  }
+  #ten {
+    display: block;
+  }
 }

@@ -1,8 +1,9 @@
 body {
-  font-family: comic, cursive, fantasy;
+  font-size: 1.5vw;
+  font-family: comic, cursive, fantasy, sans-seif, serif;
   align-items: right;
-  background: white;
-  color: black;
+  background: aquamarine;
+  color: gray;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -10,12 +11,61 @@ body {
   position: absolute;
 }
 
+#title {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  transform: rotate3d(1, 1, 1, 45deg);
+}
+
+#overlay {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: rotate3d(1, 1, 1, -45deg);
+}
+
+#projects {
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: rotate3d(1, 2, 1, 55deg);
+}
+
+#exercises {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: rotate3d(2, 1, 2, -35deg);
+}
+
+#readings {
+  position: absolute;
+  left: 70%;
+  top: 60%;
+  transform: rotate3d(2, 2, 1,65deg);
+}
+
+#webring {
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  transform: rotate3d(1, 2, 2, -15deg);
+}
+
+#reset {
+  position: absolute;
+  top: 85%;
+  left: 40%;
+  transform: rotate3d(1, 2, 2, -15deg);
+}
+
 #tomato {
-  bottom: 150px;
-  left: 1200px;
+  top: 300px;
+  left: 1300px;
   width: 150px;
   height: 120px;
-  background: red;
+  background: cornflowerblue;
   -moz-border-radius: 100px / 50px;
   -webkit-border-radius: 100px / 50px;
   border-radius: 100px / 50px;
@@ -24,23 +74,23 @@ body {
 .stems {
   width: 5px;
   height: 30px;
-  background: green;
+  background: fuchsia;
   z-index: 1;
 }
 
 #stem-a {
-  bottom: 250px;
-  left: 1275px;
+  top: 300px;
+  left: 1375px;
 }
 
 #stem-b {
-  bottom: 250px;
-  left: 1275px;
+  top: 300px;
+  left: 1375px;
   transform: rotate(60deg);
 }
 
 #stem-c {
-  bottom: 250px;
-  left: 1275px;
+  top: 300px;
+  left: 1375px;
   transform: rotate(-60deg);
 }
